@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion - The happier workspace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" class="logo">
+            <div class="logo-icon">N</div>
+            <span class="logo-text">Notion</span>
+          </a>
+          
+          <nav class="main-nav">
+            <div class="nav-item dropdown">
+              <button class="dropdown-trigger">
+                Product
+                <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="/product/wikis">Wikis</a>
+                <a href="/product/projects">Projects</a>
+                <a href="/product/docs">Docs</a>
+                <a href="/product/ai">Notion AI</a>
+              </div>
+            </div>
+            
+            <div class="nav-item dropdown">
+              <button class="dropdown-trigger">
+                Teams
+                <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="/teams/engineering">Engineering</a>
+                <a href="/teams/design">Design</a>
+                <a href="/teams/product">Product</a>
+                <a href="/teams/marketing">Marketing</a>
+              </div>
+            </div>
+            
+            <div class="nav-item dropdown">
+              <button class="dropdown-trigger">
+                Individuals
+                <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="/individuals/personal">Personal</a>
+                <a href="/individuals/students">Students</a>
+                <a href="/individuals/startups">Startups</a>
+              </div>
+            </div>
+            
+            <div class="nav-item dropdown">
+              <button class="dropdown-trigger">
+                Download
+                <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a href="/download/mobile">iOS & Android</a>
+                <a href="/download/desktop">Mac & Windows</a>
+                <a href="/download/clipper">Web Clipper</a>
+              </div>
+            </div>
+            
+            <a href="/pricing" class="nav-item">Pricing</a>
+          </nav>
+        </div>
+        
+        <div class="header-right">
+          <a href="/request-demo" class="nav-link">Request a demo</a>
+          <a href="/login" class="nav-link">Log in</a>
+          <a href="/signup" class="btn btn-primary">Get started for free</a>
+          
+          <button class="mobile-menu-toggle">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="/" class="logo">
+        <div class="logo-icon">N</div>
+        <span class="logo-text">Notion</span>
+      </a>
+      <button class="mobile-menu-close">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="mobile-nav">
+      <div class="mobile-nav-item">
+        <button class="mobile-dropdown-trigger">
+          Product
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-content">
+          <a href="/product/wikis">Wikis</a>
+          <a href="/product/projects">Projects</a>
+          <a href="/product/docs">Docs</a>
+          <a href="/product/ai">Notion AI</a>
+        </div>
+      </div>
+      
+      <div class="mobile-nav-item">
+        <button class="mobile-dropdown-trigger">
+          Teams
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-content">
+          <a href="/teams/engineering">Engineering</a>
+          <a href="/teams/design">Design</a>
+          <a href="/teams/product">Product</a>
+          <a href="/teams/marketing">Marketing</a>
+        </div>
+      </div>
+      
+      <div class="mobile-nav-item">
+        <button class="mobile-dropdown-trigger">
+          Individuals
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-content">
+          <a href="/individuals/personal">Personal</a>
+          <a href="/individuals/students">Students</a>
+          <a href="/individuals/startups">Startups</a>
+        </div>
+      </div>
+      
+      <div class="mobile-nav-item">
+        <button class="mobile-dropdown-trigger">
+          Download
+          <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-dropdown-content">
+          <a href="/download/mobile">iOS & Android</a>
+          <a href="/download/desktop">Mac & Windows</a>
+          <a href="/download/clipper">Web Clipper</a>
+        </div>
+      </div>
+      
+      <a href="/pricing" class="mobile-nav-link">Pricing</a>
+      <a href="/request-demo" class="mobile-nav-link">Request a demo</a>
+      <a href="/login" class="mobile-nav-link">Log in</a>
+      
+      <div class="mobile-nav-buttons">
+        <a href="/signup" class="btn btn-primary btn-full">Get started for free</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>The happier workspace</h1>
+          <p class="hero-subtitle">Write. Plan. Collaborate. With a little help from AI.</p>
+          
+          <div class="hero-buttons">
+            <a href="/signup" class="btn btn-blue">Get started for free</a>
+            <a href="/request-demo" class="btn btn-outline">Request a demo</a>
+          </div>
+          
+          <div class="trusted-by">
+            <p>Trusted by teams at</p>
+            <div class="trusted-logos">
+              <div class="trusted-logo">
+                <img src="https://via.placeholder.com/24x24" alt="Toyota logo" class="logo-img">
+                <span>TOYOTA</span>
+              </div>
+              <div class="trusted-logo">
+                <img src="https://via.placeholder.com/24x24" alt="Vercel logo" class="logo-img">
+                <span>Vercel</span>
+              </div>
+              <div class="trusted-logo">
+                <img src="https://via.placeholder.com/24x24" alt="Figma logo" class="logo-img">
+                <span>Figma</span>
+              </div>
+              <div class="trusted-logo">
+                <span>ramp</span>
+                <span>↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/600x500" alt="Notion workspace illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Preview Section -->
+  <section class="app-preview">
+    <div class="container">
+      <div class="app-window">
+        <div class="app-window-header">
+          <div class="window-controls">
+            <div class="window-control red"></div>
+            <div class="window-control yellow"></div>
+            <div class="window-control green"></div>
+          </div>
+          <div class="window-tabs">
+            <span>«</span>
+            <span>→</span>
+            <span>+</span>
+            <span class="window-tab">Company Wiki</span>
+            <span class="window-tab">Projects</span>
+          </div>
+        </div>
+        
+        <div class="app-window-content">
+          <div class="app-sidebar">
+            <div class="workspace-header">
+              <div class="workspace-avatar"></div>
+              <span>Acme Labs</span>
+            </div>
+            
+            <div class="sidebar-items">
+              <div class="sidebar-item">
+                <span class="sidebar-icon">🔍</span>
+                <span>Search</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">✨</span>
+                <span>Notion AI</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">🏠</span>
+                <span>Home</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">📥</span>
+                <span>Inbox</span>
+              </div>
+              
+              <div class="sidebar-section">
+                <span>Favorites</span>
+              </div>
+              
+              <div class="sidebar-item">
+                <span class="sidebar-icon">📂</span>
+                <span>Projects</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">🗺️</span>
+                <span>Roadmap</span>
+              </div>
+              <div class="sidebar-item active">
+                <span class="sidebar-icon">📚</span>
+                <span>Onboarding</span>
+              </div>
+              
+              <div class="sidebar-section">
+                <span>Teamspaces</span>
+              </div>
+              
+              <div class="sidebar-item">
+                <span class="sidebar-icon">🏢</span>
+                <span>Company</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">⚙️</span>
+                <span>Engineering</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">🎨</span>
+                <span>Design</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="app-main">
+            <div class="page-icon">📚</div>
+            <h1 class="page-title">Onboarding</h1>
+            
+            <div class="page-metadata">
+              <div class="metadata-item">
+                <p class="metadata-label">Owner</p>
+                <div class="metadata-value">
+                  <div class="user-avatar"></div>
+                  <span>Emily Yang</span>
+                </div>
+              </div>
+              <div class="metadata-item">
+                <p class="metadata-label">Verification</p>
+                <div class="metadata-value">
+                  <div class="verification-badge">✓</div>
+                  <span>Until October 15, 2025</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="page-content">
+              <h2>👋 Hello, and welcome to Acme Labs!</h2>
+              <p>
+                My name's Emily and I'm from the <span class="tag">Operations</span> team. Our team is responsible for 
+                stewarding our company planning process where we set mid and long-term strategy and 
+                near-term (e.g. 6-month) priorities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>All-in-one workspace</h2>
+        <p>Notion is your all-in-one workspace for notes, tasks, wikis, and databases.</p>
+      </div>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3>Notes & Docs</h3>
+          <p>Simple, powerful, beautiful. Write, plan, and get organized.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Tasks & Projects</h3>
+          <p>Kanban boards, calendars, and lists. Manage any type of project.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Knowledge Base</h3>
+          <p>Turn scattered knowledge into a searchable wiki for your team.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Databases</h3>
+          <p>Flexible databases to build your own CRM, inventory, or project management system.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Notion AI</h3>
+          <p>Write faster, think bigger, and augment your creativity with AI assistance.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Customizable</h3>
+          <p>Customize your workspace with thousands of templates and integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Loved by millions worldwide</h2>
+        <p>See why teams and individuals choose Notion as their workspace.</p>
+      </div>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote">"Notion has transformed how our team collaborates. We've consolidated our wiki, project management, and notes all in one place."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Product Manager at Acme</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote">"As a freelancer, I need to keep track of multiple clients and projects. Notion helps me stay organized and focused."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <p>Freelance Designer</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-quote">"I use Notion for everything from class notes to planning my schedule. It's incredibly versatile and easy to use."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <h4>Emily Rodriguez</h4>
+              <p>Student</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to get started?</h2>
+      <p>Join millions of people and teams who use Notion to be more productive every day.</p>
+      <div class="cta-buttons">
+        <a href="/signup" class="btn btn-white">Get started for free</a>
+        <a href="/request-demo" class="btn btn-outline-white">Request a demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <div class="logo-icon">N</div>
+            <span class="logo-text">Notion</span>
+          </a>
+          <p>All-in-one workspace for your notes, tasks, wikis, and databases.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="/product/wikis">Wikis</a></li>
+            <li><a href="/product/projects">Projects</a></li>
+            <li><a href="/product/docs">Docs</a></li>
+            <li><a href="/product/ai">Notion AI</a></li>
+            <li><a href="/whats-new">What's New</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Solutions</h3>
+          <ul>
+            <li><a href="/enterprise">Enterprise</a></li>
+            <li><a href="/small-business">Small Business</a></li>
+            <li><a href="/personal">Personal</a></li>
+            <li><a href="/remote-work">Remote Work</a></li>
+            <li><a href="/startups">Startups</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/guides">Guides & Tutorials</a></li>
+            <li><a href="/help">Help Center</a></li>
+            <li><a href="/api-docs">API Docs</a></li>
+            <li><a href="/community">Community</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact Sales</a></li>
+            <li><a href="/media-kit">Media Kit</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2023 Notion Labs, Inc. All rights reserved.</p>
+        <div class="language-selector">
+          <select>
+            <option>English (US)</option>
+            <option>Français</option>
+            <option>Español</option>
+            <option>Deutsch</option>
+            <option>日本語</option>
+            <option>한국어</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
