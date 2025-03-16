@@ -1,6 +1,5 @@
-# Notion-Website-Clone
+PLEASE FULLY THIS READ BEFORE USING THIS PROJECT
 Notion Clone (Unofficial)
-Created with v0 AI by Vercel
 Experimental project - Not affiliated with Notion Labs Inc.
 
 ⚠️ Legal Disclaimer
@@ -18,6 +17,7 @@ Commercial use, redistribution as a competing product, or misrepresentation of o
 
 📜 License
 CC BY-NC 4.0
+MIT
 
 This project is licensed under Creative Commons Attribution-NonCommercial 4.0 International:
 
@@ -80,3 +80,8 @@ Create a LICENSE.md file with full CC BY-NC 4.0 text
 Replace your-username in installation instructions
 
 Remove any actual Notion branding/icons if present
+- Core codebase: MIT License  
+- Notion-like UI components: CC BY-NC 4.0 (no commercial reuse)
+
+- Core codebase: MIT License  
+- Notion-like UI components: CC BY-NC 4.0 (no commercial reuse)  
